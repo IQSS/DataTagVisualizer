@@ -1,5 +1,5 @@
 {
-  "name": "datatags_visualizer",
+  "name": "dataTagsVisualizer",
   "version": "1.0.0",
   "description": "dataTags visualizer",
   "homepage": "http://datatagginglibrary.readthedocs.org/en/latest/",
@@ -31,5 +31,9 @@
   },
   "dependencies": {
     "angular-ui-bootstrap": "^1.1.2"
-  }
+  },
+  "repository": {
+		"type": "git",
+		"url": https://github.com/tzulang/DataTagVisualizer.git"
+	},
 }

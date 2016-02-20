@@ -1,5 +1,6 @@
 {
-  "name": "datatags_visualizer",
+  "name": "dataTagsVisualizer",
+  "version": "1.0.0",
   "description": "dataTags visualizer",
   "main": "index.html",
   "authors": [
