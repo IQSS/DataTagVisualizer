@@ -1,0 +1,27 @@
+
+
+
+<div class="modal-header">
+    <h3 class="modal-title" >
+        <span ng-bind ="node | printNodeType"></span>
+        <smaller ng-bind ="node.id" class ="tab"> </smaller>
+        <a class="pull-right"     ng-click="close() "><small>Close</small></a>
+    </h3>
+</div>
+
+    <div class="modal-body" ng-if="hasbody" ng-include="modalContent"></div>
+
+</div>
+<div class="modal-footer">
+
+
+    <!--<button class="btn btn-primary pull-left"  type="button" ng-click="removeGraph(node.id)">Hide Graph</button>-->
+    <!--<button class="btn btn-primary pull-center" type="button" ng-click="addSubGraph(node.id)">addSub-Nodes</button>-->
+    <!--<button class="btn btn-primary pull-right" type="button" ng-click="removeSubGraph(node.id)">Hide Sub-Nodes</button>-->
+
+</div>
+
+
+
+
+

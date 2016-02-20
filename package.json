@@ -1,5 +1,5 @@
 {
-  "name": "dataTagsVisualizer",
+  "name": "datatags_visualizer",
   "version": "1.0.0",
   "description": "dataTags visualizer",
   "homepage": "http://datatagginglibrary.readthedocs.org/en/latest/",
@@ -34,6 +34,6 @@
   },
   "repository": {
 		"type": "git",
-		"url": https://github.com/tzulang/DataTagVisualizer.git"
-	},
+		"url": "https://github.com/tzulang/DataTagVisualizer.git"
+	}
 }

@@ -257,7 +257,7 @@
         }
 
         function linkFunction(scope, element, attributes){
-            var template;
+            var template='';
             if (angular.isArray(scope.value)){
                      template = "<ul>" +
                                 "  <li ng-repeat ='v in value'>" +
@@ -273,6 +273,8 @@
                         } else {
                             template += "<assignment-viewer value= 'value[\""+ valueName + "\"]'></assignment-viewer>";
                         }
+                    } else{
+                        template += "<span class='atomicAssignment' ng-bind='value'></span>";
                     }
             }
 

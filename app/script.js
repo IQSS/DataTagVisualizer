@@ -48,7 +48,7 @@ app.controller("mainController", function($scope, dataService , graphInstance,$t
 		if (graphInstance.get()) {
 			$timeout(function () {
 					graphInstance.get().resize();
-		},
+				},
 				200);
 		}
 
@@ -60,19 +60,19 @@ app.controller("mainController", function($scope, dataService , graphInstance,$t
 
 	$scope.getClusters=function(){
 
-			var res=[];
-			if (!!$scope.decisionGraph ){
+		var res=[];
+		if (!!$scope.decisionGraph ){
 
-				var root= $scope.decisionGraph.getStartNode().getRoot();
-				var first= root.substr(0, root.indexOf ( nodeTypes.root ));
-				res.push(first);
-				angular.forEach($scope.decisionGraph, (function(cluster , name){
-					if (name!= 'getStartNode'&& first!=name){
-						res.push(name);
-					}
-				}));
-			}
-			return res;
+			var root= $scope.decisionGraph.getStartNode().getRoot();
+			var first= root.substr(0, root.indexOf ( nodeTypes.root ));
+			res.push(first);
+			angular.forEach($scope.decisionGraph, (function(cluster , name){
+				if (name!= 'getStartNode'&& first!=name){
+					res.push(name);
+				}
+			}));
+		}
+		return res;
 	}
 
 	$scope.openCluster=function(clusterName){
@@ -84,16 +84,17 @@ app.controller("mainController", function($scope, dataService , graphInstance,$t
 		if ( c.length==0){
 
 			c= cy.add(cluster);
-			cy.layout(cy.options);
+			//cy.layout(cy.options);
 
-		} else {
-			cy.animate({
-
-				center: {eles: c},
-				zoom: 1
-
-			});
 		}
+		cy.layout(cy.options);
+		//cy.animate({
+        //
+		//	center: {eles: c},
+		//	zoom: 1
+        //
+		//});
+
 	}
 
 
