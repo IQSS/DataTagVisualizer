@@ -971,15 +971,16 @@
                 cy.animate({
 
                     center: c,
-
-                });
+                    duration: 1000,
+                }
+                );
 
                 break;
 
             case 'remove' :
-                var g = cy.$("node[parent='" + cluster.getRoot() + "']");
-                removeNodes(g);
                 g = cy.$("node[id='" + cluster.getRoot() + "']");
+                removeNodes(g);
+                var g = cy.$("node[parent='" + cluster.getRoot() + "']");
                 removeNodes(g);
                 cy.layout(cy.options);
                 break;
@@ -992,7 +993,8 @@
                     center: {
                         eles: c
                     },
-                    zoom: 3,
+                    zoom: 2,
+
                     complete: function(){
                         var res = ModalHandler.openModal(c.data().node, cy);
                         res.then(function (resault) {
@@ -1002,6 +1004,8 @@
                             }
                         });
                     }
+                },{
+                    duration: 300,
                 });
                 break;
             default :
@@ -1012,8 +1016,8 @@
 
     function removeNodes(nodeGroup) {
         var removed = []
-        var lastPosition = null;
-        var d = 1000 / nodeGroup.length;
+        //var lastPosition = null;
+        //var d = 1000 / nodeGroup.length;
         nodeGroup.forEach(function (e, i) {
             var pos = e.position();
             e.animate({
@@ -1022,7 +1026,7 @@
 
                 }
                  }, {
-                duration: d * i,
+                duration:500,
                 complete: function () {
                     removed.push(e.remove());
                 }
@@ -1071,9 +1075,9 @@
                 }, // higher weight edges are generally made shorter and straighter than lower weight edges
 
                 // general layout options
-                fit: true, // whether to fit to viewport
+                fit: false, // whether to fit to viewport
                 padding: 10, // fit padding
-                animate: true, // whether to transition the node positions
+                animate: false, // whether to transition the node positions
                 animationDuration: 1000, // duration of animation in ms if enabled
                 animationEasing: undefined, // easing of animation if enabled
                 boundingBox: undefined, // constrain layout bounds; { x1, y1, x2, y2 } or { x1, y1, w, h }

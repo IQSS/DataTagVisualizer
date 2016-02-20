@@ -23,4 +23,4 @@ tested on Chrome and Firefox
 
     bower install dataTagsVisualizer 
  
- Or download a portable version of the web application from the 'app' folder
+  run in your local host  the web application from the 'app' folder 

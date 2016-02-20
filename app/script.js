@@ -84,16 +84,15 @@ app.controller("mainController", function($scope, dataService , graphInstance,$t
 		if ( c.length==0){
 
 			c= cy.add(cluster);
-			//cy.layout(cy.options);
 
 		}
 		cy.layout(cy.options);
-		//cy.animate({
-        //
-		//	center: {eles: c},
-		//	zoom: 1
-        //
-		//});
+		cy.animate({
+
+			center: {eles: c},
+			zoom: 1,
+			duration: 1000,
+		});
 
 	}
 
