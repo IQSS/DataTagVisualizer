@@ -1,0 +1,308 @@
+
+a.clickable:hover, a.clickable:focus{
+
+    cursor: pointer  !important;
+}
+
+
+.tab{
+    margin-left : 20px;
+}
+
+
+.cy-panzoom-zoom-button {
+
+    width: 20px;
+    height: 20px;
+}
+
+.cy-panzoom-slider-handle{
+
+    width: 20px;
+    height: 12px;
+}
+
+.cy-panzoom{
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 12px !important;
+
+}
+
+.cy-panzoom-panner {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 50px;
+    width: 50px;
+
+}
+
+.cy-panzoom-no-zoom-tick{
+
+    border: 1px solid #646464;
+    width: 9px;
+}
+
+.text_view{
+
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: inherit;
+    line-height: 1.5em;
+    color: #333;
+
+    /* background-color: #f5f5f5; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+.openFileDialog {
+    display: none !important;
+}
+
+.select_file {
+
+    cursor: pointer;
+}
+
+
+#openFileDialog {
+    /*display: none !important;*/
+}
+
+
+
+.open-file-dialog{
+
+
+    height: 400px;
+    padding : 20px;
+}
+
+.open-file-dialog-status{
+
+    margin-left:20px;
+
+}
+
+.modal-body{
+    min-height: 60px;
+}
+
+body , html{
+
+    font-family: 'goudy old style', 'minion pro', 'bell mt', Georgia, 'Hiragino Mincho Pro', serif;
+    font-size: 17px;
+    height: 100%;
+    margin: 0px;
+}
+
+
+.not-active{
+
+    opacity: 0.7;
+    color: grey;
+
+}
+
+
+.is-active{
+
+    cursor: hand;
+}
+
+
+.logo{
+    width: 100px;
+}
+
+
+
+.navbar{
+    background-color: white;
+    height: 60px;
+}
+
+
+
+
+
+a.navbar-brand > h2 {
+
+    text-shadow: 2px 0px 2px #DDE4E8;
+    color: #5BA1D7;
+    font-weight: 600;
+    margin-top: 8px;
+    /*margin-left: 20px;*/
+}
+
+.tag-space-button{
+    width: 40px;
+    top: -6px;
+    position: relative;
+
+}
+
+.navbar-buttons{
+    position: relative;
+    top: 30px;
+    left: 30px;
+
+}
+
+
+.navbar-button{
+    margin-left: 30px;
+
+}
+
+
+a.navbar-button.is-active:hover,
+a .tag-space-button.is-active:hover
+{
+    color: #337ab7;
+    opacity: 0.7;
+}
+
+.main{
+    /*margin-top: relative*/
+
+}
+
+#cy {
+    margin: 5px 0;
+    height: 100%;
+    width: 100%;
+
+    position: fixed;
+    /*border: 1px solid #e7e7e7;;*/
+
+}
+
+#ts {
+    margin: 45px 0px;
+    height: 80%;
+    width: 100%;
+    position: fixed;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+
+}
+
+.panel.panel-primary{
+    /*height: 60px;*/
+    overflow: auto;
+}
+
+
+.box{
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
+    overflow:  auto;
+
+
+}
+
+P{
+    color: #95b2e6;
+}
+
+.ccc{
+
+    top: 60px;
+    position: absolute;
+}
+
+
+.legend,
+.cluster-list{
+
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+
+
+
+    background-color: #F8F7F4;
+
+    width: auto;
+    height: auto;
+
+    -webkit-box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.75);
+
+    position: fixed;
+}
+
+.legend{
+
+    right: 7px;
+    bottom: 10px;
+    padding: 10px;
+}
+
+.legend-entry{
+    margin-right: 30px;
+}
+.cluster-list {
+    right: 7px;
+    top: 65px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 430px;
+    padding: 10px 0;
+
+}
+
+.cluster-list-entry{
+    margin-right: 20px;
+    /*margin-left: 20px;*/
+}
+
+.cluster-list-entry:hover{
+
+    text-shadow: 0 0 5px #FF0F0F;
+    cursor: hand;
+}
+
+.bgu-logo{
+    height: 35px;
+    margin: 0 10px;
+    opacity: 0.5;
+}
+
+.tag-Accordion{
+
+}
+
+.header-tag-type{
+    font-size: smaller;
+    color:darkgray;
+}
+
+
+
+
+.tag-Accordion > th {
+    text-align: left;
+
+}
+
+.tag-Accordion  thead{
+    background-color: #CED0D1;
+}

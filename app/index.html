@@ -1,0 +1,119 @@
+<header>
+    <title> DataTag Visualzier </title>
+    <meta charset="UTF-8">
+
+
+
+
+</header>
+
+<body ng-app="mainModule" ng-controller='mainController'>
+
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class=" ">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://datatagginglibrary.readthedocs.org/en/latest/" target="_blank">
+                <img alt="Brand" class="logo" src="resources/datatags-logo-large.png">
+            </a>
+            <a class="navbar-brand" href="http://datatagginglibrary.readthedocs.org/en/latest/" target="_blank">
+                <h2> Visualizer</h2>
+            </a>
+        </div>
+        <div class="navbar-buttons">
+
+            <a ng-click="openFile()" uib-tooltip="Open File" tooltip-placement="bottom"
+               class="navbar-button is-active  ">
+                <span class="glyphicon glyphicon-folder-open"> </span>
+            </a>
+            <a ng-click="exportJpg()" uib-tooltip="Export to JPG" tooltip-placement="bottom"
+               class="navbar-button is-active  " ng-show="showGraphItems">
+                <span class="glyphicon glyphicon glyphicon-floppy-disk"> </span>
+            </a>
+
+        </div>
+        <img src="resources/bguLogo.gif" class="pull-right bgu-logo">
+    </div>
+</div>
+
+<div class="main ">
+    <div class="row   ccc ">
+        <div class="col-xs-12 col-sm-12 ">
+
+            <uib-tabset>
+                <uib-tab active="active[0]" select="refreshGraph()">
+
+
+                    <uib-tab-heading>
+                        <span> Decision Graph </span>
+                        <img src="resources/decisionGraph.png" class="tag-space-button">
+                    </uib-tab-heading>
+
+
+                    <div graph id="cy" src=decisionGraph></div>
+                    <div class="legend" ng-show="showGraphItems">
+                        <ul ng-repeat="(node,color) in colors" class="legend-entry">
+                            <span class="glyphicon glyphicon-record" style="color: {{color}}"></span>
+                            {{node}} node
+                        </ul>
+                    </div>
+
+                    <div class="cluster-list" ng-show="showGraphItems">
+
+                        <ul ng-repeat="cluster in getClusters()" ng-click="openCluster(cluster)"
+                            class="cluster-list-entry">
+
+                            {{cluster}}
+
+                        </ul>
+                    </div>
+
+                </uib-tab>
+
+
+                <uib-tab active="active[1]">
+                    <uib-tab-heading>
+                        <span> Tag Space </span>
+                        <img src="resources/tagSpace.png" class="tag-space-button">
+                    </uib-tab-heading>
+                    <div class="contet">
+
+                        <div id="ts">
+                            <div class="sss">
+                                <tag-space tag="tagSpace"></tag-space>
+                            </div>
+                        </div>
+                    </div>
+                </uib-tab>
+            </uib-tabset>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="components/jquery.min.js"></script>
+<script src="components/angular.min.js"></script>
+<script src="components/bootsrap/js/bootstrap.min.js"></script>
+<link href="components/bootsrap/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="components/angular-bootstrap/ui-bootstrap.min.js"></script>
+<script src="components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+<script src="components/cytoscape/cytoscape.min.js"></script>
+<script src="components/cytoscape-dagre/dagre.js"></script>
+<script src="components/cytoscape-dagre/cytoscape-dagre.js"></script>
+
+<script src="components/cytoscape-panzoom/cytoscape-panzoom.js"></script>
+<link href='components/cytoscape-panzoom/cytoscape.js-panzoom.css' rel="stylesheet">
+<link href="components/cytoscape-panzoom/font-awesome-4.0.3/css/font-awesome.min.css " rel="stylesheet">
+
+
+<link href='src/css/dataTagsVisalizer.min.css' rel='stylesheet'>
+
+
+
+<script src='src/js/dataTagsVisalizer.min.js'></script>
+<script src='script.js'></script>
+
+</body>

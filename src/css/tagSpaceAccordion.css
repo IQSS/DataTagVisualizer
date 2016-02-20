@@ -1,0 +1,21 @@
+
+.tag-Accordion{
+
+}
+
+.header-tag-type{
+    font-size: smaller;
+    color:darkgray;
+}
+
+
+
+
+.tag-Accordion > th {
+    text-align: left;
+
+}
+
+.tag-Accordion  thead{
+    background-color: #CED0D1;
+}

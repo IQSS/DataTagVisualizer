@@ -1,0 +1,13 @@
+<uib-accordion class="tag-Accordion">
+    <uib-accordion-group is-open="is_open"  ng-init="is_open = true"  panel-class="panel-primary">
+        <uib-accordion-heading >
+            <span >{{tag.name}} </span>
+            <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': is_open, 'glyphicon-chevron-right': !is_open}"></i>
+        </uib-accordion-heading>
+
+        <div ng-repeat="subTag in tag.slots">
+            <tag-space-accordion tag="subTag"> </tag-space-accordion>
+        </div>
+    </uib-accordion-group>
+</uib-accordion>
+

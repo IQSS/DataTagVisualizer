@@ -1,0 +1,27 @@
+{
+  "name": "datatags_visualizer",
+  "description": "dataTags visualizer",
+  "main": "index.html",
+  "authors": [
+    "Yonatan Tzulang"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "http://datatagginglibrary.readthedocs.org/en/latest/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".idea"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.7",
+    "cytoscape": "~2.6.3",
+    "bootstrap": "~3.3.5",
+    "cytoscape-dagre": "~1.1.2",
+    "cytoscape-panzoom": "~2.2.0"
+  }
+}

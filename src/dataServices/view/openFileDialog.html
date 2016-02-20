@@ -1,0 +1,25 @@
+
+    <div class="modal-header">
+
+        <h3 class="modal-title" >
+            Open File
+            <a class="pull-right" ng-click="closeDialog() "><small>Close</small></a>
+        </h3>
+    </div>
+
+
+
+    <div class="modal-body">
+
+        <input type="file" id="openFileDialog"/>
+        <br>
+
+
+    </div>
+
+
+<div class="modal-footer">
+    <button class="btn btn-primary pull-left" ng-click="ok()"> OK</button>
+    <button class="btn btn-primary pull-left" ng-click="closeDialog()"> Cancel</button>
+    <span class="open-file-dialog-status">{{status}}</span>
+</div>
