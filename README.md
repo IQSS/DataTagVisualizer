@@ -20,7 +20,6 @@ tested on Chrome and Firefox
 
 
 ### Install
-
-    bower install dataTagsVisualizer 
  
+  download or clone the repository
   run in your local host  the web application from the 'app' folder 
