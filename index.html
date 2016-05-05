@@ -1,8 +1,55 @@
 <html>
   <head>
+    <link rel="stylesheet" href="bootstrap.min.css">
     <title>DataTags Interactive Visualizer</title>
+    <style>
+    body {
+      background-color: #d8e4f0;
+    }
+    .screenshot {
+      border: 2px solid gray;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    li {
+      margin-bottom: .5em;
+    }
+    </style>
   </head>
   <body>
-    <a href="app/">START</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-12-xs">
+          <h1>
+            <a class="pull-right" href="http://datatags.org"><img src="app/resources/datatags-logo-large.png"/></a>
+              <br>
+              DataTags Interactive Visualizer
+          </h1>
+          <h3>Instructions</h3>
+          <p>
+            You need to have a <code>json</code> file with the decision graph and tag space ready. You can generate one using
+            the <code>\toJson</code> command in Tags' <a href="http://datatagginglibrary.readthedocs.io/en/latest/take-for-spin.html#the-clirunner">CliRunner</a>. Or, you can download <a href="sample.json">this demo file</a>.
+          </p>
+          <p>
+            <span class="text-warning">Please note that the demo has not been vetted for real-world use.</span>
+          </p>
+
+          <ol>
+            <li><a href="app/" target="_blank">START</a> the application (this will open a new browser tab or window).</li>
+            <li>Click the "open file" button <br>
+                <img class="screenshot" src="open-file.png" alt="open file illustration">
+            </li>
+            <li>A file selection dialog will appear. Select the json file and click "OK".</li>
+          </ol>
+
+          <p>
+            <small>
+              The DataTags Interactive Visualizer project was originally created by <a href="https://github.com/tzulang">@tzulang</a> for
+              class "Topic in DataTags" at the <a href="http://cs.bgu.ac.il/">CS department of BGU</a>. Like the rest of the DataTags project, the Data Tags Interactive Visualizer is open-sourced and <a href="https://github.com/IQSS/DataTagsInteractiveVisualizer">hosted at GitHub</a>.
+            </small>
+          </p>
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
