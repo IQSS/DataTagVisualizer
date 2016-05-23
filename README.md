@@ -8,7 +8,7 @@ This repository contains an interactive visualizer for the DataTags Decision Gra
 
 ## Usage
 1. To generate an input for the visualizer, use `\toJson` command from DataTags' `CliRunner` tool.
-1. Open [the app](http://TODO)
+1. Open [the app](http://iqss.github.io/DataTagsInteractiveVisualizer/)
 1. Click the `open file` button (see image) and select the generated file.
 
 ### Local Install
